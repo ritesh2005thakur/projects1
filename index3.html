@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+</head>
+<style>
+    .card {
+ --background: linear-gradient(to left, #f7ba2b 0%, #ea5358 100%);
+ width: 950px;
+ height: 254px;
+ padding: 5px;
+ border-radius: 1rem;
+ overflow: visible;
+ background: #f7ba2b;
+ background: var(--background);
+ position: relative;
+ z-index: 1;
+}
+
+.card::after {
+ position: absolute;
+ content: "";
+ top: 30px;
+ left: 0;
+ right: 0;
+ z-index: -1;
+ height: 100%;
+ width: 100%;
+ transform: scale(0.8);
+ filter: blur(25px);
+ background: #f7ba2b;
+ background: var(--background);
+ transition: opacity .5s;
+}
+
+.card-info {
+ --color: #181818;
+ background: var(--color);
+ color: var(--color);
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ width: 100%;
+ height: 100%;
+ overflow: visible;
+ border-radius: .7rem;
+}
+
+.card .title {
+ font-weight: bold;
+ letter-spacing: .1em;
+}
+
+.txt {
+    text-align: center;
+    
+}
+
+body{
+    background-color: #7257fa;
+}
+.title{
+    color:white;
+
+}
+.title{
+    text-align: center;
+    color: white;
+    font-size: large;
+    font-weight: 100;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.panel-footer {
+    margin-top: 30px;
+    padding-top: 35px;
+    padding-bottom: 30px;
+    background-color: #222;
+    border-top: 0;
+  
+  }
+
+
+  .text-center {
+    text-align: center;
+    color: white;
+  }  
+
+  @media  screen and (max-width: 600px){
+    .card{
+      width: 350px;
+      height: 200px;
+    }
+  }
+
+
+</style>
+<body>
+    <h1 class="txt">About Us</h1>
+    <div class="card">
+        <div class="card-info">
+          <p class="title">Our Instagram Id's-<br><br>
+            1. ritesh_s_thakur<br><br>
+            2. kanika_thakur5630
+          </p>
+        </div>
+      </div>
+
+      <footer class="panel-footer" >
+        <div class="container">
+          <div class="row">
+            <section id="hours" class="col-sm-4">
+              <span>      <div class="text-center">
+                &copy; Copyright Ritesh Thakur India 2023 |
+                <a ui-sref="admin.auth">Admin</a></div>
+            </span>
+            </section>
+            </div>
+            </div>      
+</body>
+</html>

@@ -1,0 +1,219 @@
+body {
+    font-size: 16px;
+    color: #fff;
+    background-color: #e47fa8;
+    font-family: 'Oxygen', sans-serif;
+  }
+  
+  .initial-loading {
+    margin-top: 60px;
+  }
+  #header-nav {
+    background-color: #fddae9;
+    border-radius: 0;
+    border: 0;
+  }
+  .navbar-brand {
+    padding-top: 25px;
+  }
+  .navbar-brand h1 { /* Restaurant name */
+    font-family: 'Lora', serif;
+    color: #dc4a57;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #222;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: .75;
+    text-align: center;
+  }
+  .navbar-brand a:hover, .navbar-brand a:focus {
+    text-decoration:dashed;
+  }
+  
+#nav-list {
+    margin-top: 10px;
+  }
+  #nav-list a {
+    color: #951C49;
+    text-align: center
+    
+  }
+  #nav-list a:hover {
+    background: #E7E7E7;
+  }
+  #nav-list a span {
+    font-size: 2em;
+  }
+  .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+    border: 1px solid #61122f;
+  }
+
+
+  .card {
+    --bg: #e8e8e8;
+    --contrast: #e2e0e0;
+    --grey: #93a1a1;
+    position: center;
+    padding: 10px;
+    background-color: var(--bg);
+    border-radius: 35px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  }
+  
+  .card-overlay {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: repeating-conic-gradient(var(--bg) 0.0000001%, var(--grey) 0.000104%) 60% 60%/600% 600%;
+    filter: opacity(10%) contrast(105%);
+  }
+  
+  .card-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 955px;
+    height: 150px;
+    background-color: var(--contrast);
+    border-radius: 35px;
+    /* Content style */
+    font-size: 30px;
+    font-weight: 900;
+    color: #dc4a57;
+    text-align: center;
+    font-family: 'Oxygen', sans-serif;
+  }
+
+  .cssbuttons-io-button {
+    background: #A370F0;
+    color: white;
+    font-family: inherit;
+    padding: 0.35em;
+    padding-left: 1.2em;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 0.9em;
+    border: none;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    box-shadow: inset 0 0 1.6em -0.6em #714da6;
+    overflow: hidden;
+    position: relative;
+    height: 2.8em;
+    padding-right: 3.3em;
+  }
+  
+  .cssbuttons-io-button .icon {
+    background: white;
+    margin-left: 1em;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.2em;
+    width: 2.2em;
+    border-radius: 0.7em;
+    box-shadow: 0.1em 0.1em 0.6em 0.2em #7b52b9;
+    right: 0.3em;
+    transition: all 0.3s;
+  }
+  
+  .cssbuttons-io-button:hover .icon {
+    width: calc(100% - 0.6em);
+  }
+  
+  .cssbuttons-io-button .icon svg {
+    width: 3em;
+    transition: transform 1s;
+    color: #7b52b9;
+  }
+  
+  .cssbuttons-io-button:hover .icon svg {
+    transform: translateX(0.3em);
+  }
+  
+  .cssbuttons-io-button:active .icon {
+    transform: scale(2);
+  }
+  
+
+  .panel-footer {
+    margin-top: 30px;
+    padding-top: 35px;
+    padding-bottom: 30px;
+    background-color: #222;
+    border-top: 0;
+  }
+  .panel-footer div.row {
+    margin-bottom: 35px;
+  }
+  #hours, #address {
+    line-height: 2;
+  }
+  #hours > span, #address > span {
+    font-size: 1.3em;
+  }
+  #address p {
+    color: #557c3e;
+    font-size: .8em;
+    line-height: 1.8;
+  }
+  #testimonials {
+    font-style: italic;
+  }
+  #testimonials p:nth-child(2) {
+    margin-top: 25px;
+  }
+  a[ui-sref="admin.auth"] {
+    color: #fff;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  .poem{
+    text-align: center;
+  }
+  .text{
+    text-align: center;
+  }
+  .txt{
+    text-align: center;
+  }
+  .col-sm-4{
+    text-align: center;
+  }
+
+@media  screen and (max-width: 600px)
+{
+  .navbar-brand h1 { /* Restaurant name */
+
+    font-size: 36px;
+    line-height: 50px;
+    width: 370px;
+    
+  }
+  .card-inner{
+    width: 350px;
+  }
+  .card{
+    width:350px;
+  }
+  #header-nav {
+    width:365px;
+  }
+  .navbar-brand{
+    width: 370px;
+  }
+  .card-overlay {
+    width: 370px;
+  }
+}
+
+  
